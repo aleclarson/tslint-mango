@@ -1,0 +1,8 @@
+{
+  "name": "tslint-mango",
+  "version": "0.1.0",
+  "main": "tslint.json",
+  "license": "MIT",
+  "repository": "aleclarson/tslint-mango",
+  "description": "TSLint preset for mango lovers"
+}
