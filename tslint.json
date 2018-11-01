@@ -6,7 +6,7 @@
     "tslint-react",
     "tslint-divid"
   ],
-  "rulesDirectory": ["tslint-misc-rules"],
+  "rulesDirectory": ["tslint-misc-rules", "./rules"],
   "rules": {
     "arrow-parens": [true, "ban-single-arg-parens"],
     "ban-types": {
