@@ -5,6 +5,10 @@
   "license": "MIT",
   "repository": "aleclarson/tslint-mango",
   "description": "TSLint preset for fruity code",
+  "files": [
+    "index.json",
+    "lib"
+  ],
   "dependencies": {
     "tslint-clean-code": "^0.2.7",
     "tslint-config-prettier": "^1.15.0",
