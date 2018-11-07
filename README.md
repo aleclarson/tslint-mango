@@ -12,7 +12,7 @@ This preset extends the following presets (in order):
 - [`palantir/tslint-react`](https://github.com/palantir/tslint-react)
 - [`dividab/tslint-divid`](https://github.com/dividab/tslint-divid)
 - [`jwbay/tslint-misc-rules`](https://github.com/jwbay/tslint-misc-rules)
-- custom configuration
+- custom rules / tweaks
 
 ## Rules
 
