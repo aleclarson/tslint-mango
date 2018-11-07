@@ -5,7 +5,7 @@
     "tslint-clean-code",
     "tslint-react"
   ],
-  "rulesDirectory": ["tslint-misc-rules", "./rules"],
+  "rulesDirectory": ["tslint-misc-rules", "./lib"],
   "rules": {
     "arrow-parens": [true, "ban-single-arg-parens"],
     "ban-types": {
