@@ -1,7 +1,7 @@
 {
   "name": "tslint-mango",
   "version": "0.1.2",
-  "main": "tslint-mango.json",
+  "main": "index.json",
   "license": "MIT",
   "repository": "aleclarson/tslint-mango",
   "description": "TSLint preset for fruity code",
