@@ -10,7 +10,6 @@ This preset extends the following presets (in order):
 - [`alexjoverm/tslint-config-prettier`](https://github.com/alexjoverm/tslint-config-prettier)
 - [`Glavin001/tslint-clean-code`](https://github.com/Glavin001/tslint-clean-code)
 - [`palantir/tslint-react`](https://github.com/palantir/tslint-react)
-- [`dividab/tslint-divid`](https://github.com/dividab/tslint-divid)
 - [`jwbay/tslint-misc-rules`](https://github.com/jwbay/tslint-misc-rules)
 - custom rules / tweaks
 
@@ -42,6 +41,15 @@ Unlisted presets have all of their rules used.
 
 ### Custom rules
 
-#### no-semicolon-interface
+#### interface-member-separator
 
-Replace `;` with `,` in `interface` blocks.
+Enforce which character separates interface members.
+
+**Usage:**
+```js
+[true, ";"] // semicolons only
+[true, ","] // commas only
+[true, ""]  // none
+```
+
+**Has fixer?** `true`
