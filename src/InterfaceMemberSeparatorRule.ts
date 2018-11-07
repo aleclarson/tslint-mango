@@ -1,29 +1,64 @@
 import * as Lint from 'tslint'
 import * as ts from 'typescript'
 
+const styles: [';', ',', ''] = [';', ',', '']
+const styleTokens = {
+  [ts.SyntaxKind.CommaToken]: ',',
+  [ts.SyntaxKind.SemicolonToken]: ';',
+}
+
+type StyleOption = (typeof styles)[number]
+type Options = {
+  style: StyleOption
+}
+
 export class Rule extends Lint.Rules.AbstractRule {
-  static FAILURE_STRING = 'Use comma instead of semicolon in interfaces.'
+  static metadata: Lint.IRuleMetadata = {
+    ruleName: 'interface-member-separator',
+    description: 'Enforces punctuation of interface members.',
+    hasFix: true,
+    optionsDescription: Lint.Utils.dedent`
+        One argument may be optionally provided:
+        * \`"style"\` checks alignment of function parameters.`,
+    options: {
+      type: 'array',
+      items: {
+        type: 'string',
+        enum: styles,
+      },
+      minLength: 2,
+      maxLength: 2,
+    },
+    optionExamples: [[true, ';'], [true, ','], [true, '']],
+    type: 'style',
+    typescriptOnly: true,
+  }
 
   apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
-    const walker = new SemicolonInterfaceWalker(sourceFile, this.getOptions())
-    return this.applyWithWalker(walker)
+    return this.applyWithFunction(sourceFile, walk, {
+      style: this.ruleArguments.find(arg => styles.includes(arg)),
+    })
   }
 }
 
-class SemicolonInterfaceWalker extends Lint.RuleWalker {
-  visitInterfaceDeclaration(iface: ts.InterfaceDeclaration): void {
-    const sourceFile = this.getSourceFile()
-    for (const member of iface.members) {
-      for (const child of member.getChildren(sourceFile)) {
-        if (child.kind == ts.SyntaxKind.SemicolonToken) {
-          this.addFailureAtNode(
-            child,
-            Rule.FAILURE_STRING,
-            Lint.Replacement.replaceNode(child, ',')
+function walk(ctx: Lint.WalkContext<Options>) {
+  const { options } = ctx
+  ts.forEachChild(ctx.sourceFile, node => {
+    if (ts.isInterfaceDeclaration(node)) {
+      node.members.forEach(member => {
+        const lastToken = member.getLastToken()
+        if (lastToken) {
+          const style: StyleOption = styleTokens[lastToken.kind] || ''
+          if (style == options.style) return
+          ctx.addFailureAtNode(
+            lastToken,
+            `Interface member must end with "${
+              options.style
+            }" instead of "${style}"`,
+            Lint.Replacement.replaceNode(lastToken, options.style)
           )
         }
-      }
+      })
     }
-    super.visitInterfaceDeclaration(iface)
-  }
+  })
 }
