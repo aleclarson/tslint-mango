@@ -39,9 +39,9 @@ Unlisted presets have all of their rules used.
 - [`"jsx-no-braces-for-string-attributes": true`](https://github.com/jwbay/tslint-misc-rules#7)
 - [`"react-lifecycle-order": true`](https://github.com/jwbay/tslint-misc-rules#8)
 
-### Custom rules
+## Custom rules
 
-#### interface-member-separator
+### interface-member-separator
 
 Enforce which character separates interface members.
 
