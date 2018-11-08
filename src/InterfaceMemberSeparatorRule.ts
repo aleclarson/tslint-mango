@@ -49,14 +49,21 @@ function walk(ctx: Lint.WalkContext<Options>) {
         const lastToken = member.getLastToken()
         if (lastToken) {
           const style: StyleOption = styleTokens[lastToken.kind] || ''
-          if (style == options.style) return
-          ctx.addFailureAtNode(
-            lastToken,
-            `Interface member must end with "${
-              options.style
-            }" instead of "${style}"`,
-            Lint.Replacement.replaceNode(lastToken, options.style)
-          )
+          if (style !== options.style) {
+            ctx.addFailureAtNode(
+              style !== '' ? lastToken : member,
+              `Interface member must end with "${
+                options.style
+              }" instead of "${style}"`,
+              style == ''
+                ? Lint.Replacement.replaceFromTo(
+                    lastToken.end,
+                    lastToken.end,
+                    options.style
+                  )
+                : Lint.Replacement.replaceNode(lastToken, options.style)
+            )
+          }
         }
       })
     }
