@@ -6,7 +6,7 @@
     "tslint-react"
   ],
   "rulesDirectory": [
-    "tslint-mango/node_modules/tslint-misc-rules",
+    "tslint-misc-rules",
     "tslint-mango/lib"
   ],
   "rules": {
