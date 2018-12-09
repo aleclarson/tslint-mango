@@ -13,17 +13,14 @@
     "build": "tsc -p ."
   },
   "dependencies": {
+    "tslint": "^5.11.0",
     "tslint-clean-code": "^0.2.7",
     "tslint-config-prettier": "^1.15.0",
     "tslint-misc-rules": "^3.5.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.2.2"
   },
-  "peerDependencies": {
-    "tslint": "^5.11.0"
-  },
   "devDependencies": {
-    "prettier": "1.15.3",
-    "tslint": "5.11.0"
+    "prettier": "1.15.3"
   }
 }
