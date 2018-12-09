@@ -4,12 +4,9 @@
   "compilerOptions": {
     "lib": ["es2017"],
     "moduleResolution": "node",
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noImplicitUseStrict": true,
     "outDir": "lib",
-    "strictNullChecks": true,
+    "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es5"
+    "target": "es2015"
   }
 }
