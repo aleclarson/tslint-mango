@@ -73,6 +73,10 @@
       }
     },
     "triple-equals": false,
+    "unified-signatures": {
+      "options": [true],
+      "severity": "warning"
+    },
     "variable-name": [
       true,
       "check-format",
