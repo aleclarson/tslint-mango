@@ -10,6 +10,7 @@ This preset extends the following presets (in order):
 - [`alexjoverm/tslint-config-prettier`](https://github.com/alexjoverm/tslint-config-prettier)
 - [`Glavin001/tslint-clean-code`](https://github.com/Glavin001/tslint-clean-code)
 - [`palantir/tslint-react`](https://github.com/palantir/tslint-react)
+- [`kaiza/tslint-jasmine-rules`](https://github.com/kaiza/tslint-jasmine-rules)
 - [`jwbay/tslint-misc-rules`](https://github.com/jwbay/tslint-misc-rules)
 - custom rules / tweaks
 
@@ -31,6 +32,13 @@ Unlisted presets have all of their rules used.
 - `"jsx-no-lambda": false`
 - `"jsx-self-close": true`
 - `"jsx-space-before-trailing-slash": true`
+
+### tslint-jasmine-rules
+
+These rules are only warnings:
+
+- `"no-focused-tests": true`
+- `"no-disabled-tests": true`
 
 ### tslint-misc-rules
 

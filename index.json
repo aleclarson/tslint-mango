@@ -3,7 +3,8 @@
     "tslint:recommended",
     "tslint-config-prettier",
     "tslint-clean-code",
-    "tslint-react"
+    "tslint-react",
+    "tslint-jasmine-rules"
   ],
   "rulesDirectory": ["tslint-misc-rules", "./lib"],
   "rules": {
@@ -48,7 +49,9 @@
     "no-commented-out-code": true,
     "no-conditional-assignment": false,
     "no-default-export": true,
+    "no-disabled-tests": [true, "no-fix"],
     "no-empty": [true, "allow-empty-functions"],
+    "no-focused-tests": [true, "no-fix"],
     "no-namespace": false,
     "no-shadowed-variable": false,
     "no-string-literal": false,
