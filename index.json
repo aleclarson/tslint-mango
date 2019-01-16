@@ -51,6 +51,7 @@
     "no-empty": [true, "allow-empty-functions"],
     "no-namespace": false,
     "no-shadowed-variable": false,
+    "no-string-literal": false,
     "object-literal-sort-keys": [true, "match-declaration-order"],
     "one-line": [true, "check-open-brace"],
     "prefer-conditional-expression": true,
