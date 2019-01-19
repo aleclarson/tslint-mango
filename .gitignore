@@ -2,3 +2,6 @@
 /lib/
 
 shrinkwrap.yaml
+
+/.yalc/
+/yalc.lock
