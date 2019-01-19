@@ -1,4 +1,4 @@
-# tslint-mango v0.1.9
+# tslint-mango v0.1.10
 
 TSLint preset
 
