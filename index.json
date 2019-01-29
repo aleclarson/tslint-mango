@@ -49,9 +49,13 @@
     "no-commented-out-code": true,
     "no-conditional-assignment": false,
     "no-default-export": true,
-    "no-disabled-tests": [true, "no-fix"],
+    "no-disabled-tests": {
+      "severity": "warning"
+    },
     "no-empty": [true, "allow-empty-functions"],
-    "no-focused-tests": [true, "no-fix"],
+    "no-focused-tests": {
+      "severity": "warning"
+    },
     "no-namespace": false,
     "no-shadowed-variable": false,
     "no-string-literal": false,
