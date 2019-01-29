@@ -45,7 +45,6 @@ These rules are only warnings:
 ### tslint-misc-rules
 
 - [`"class-method-newlines": true`](https://github.com/jwbay/tslint-misc-rules#3)
-- [`"jsx-no-closing-bracket-newline": true`](https://github.com/jwbay/tslint-misc-rules#6)
 - [`"jsx-no-braces-for-string-attributes": true`](https://github.com/jwbay/tslint-misc-rules#7)
 - [`"react-lifecycle-order": true`](https://github.com/jwbay/tslint-misc-rules#8)
 

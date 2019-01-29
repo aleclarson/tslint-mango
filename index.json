@@ -25,7 +25,6 @@
     "jsx-boolean-value": true,
     "jsx-curly-spacing": [true, "never"],
     "jsx-equals-spacing": [true, "never"],
-    "jsx-no-closing-bracket-newline": true,
     "jsx-no-braces-for-string-attributes": true,
     "jsx-self-close": true,
     "jsx-space-before-trailing-slash": true,
