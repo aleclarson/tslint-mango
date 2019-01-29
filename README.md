@@ -26,12 +26,14 @@ Unlisted presets have all of their rules used.
 
 ### tslint-react
 
-- `(insert default rules here)`
+These rules are described [here](https://github.com/palantir/tslint-react#rules).
+
+- `"jsx-boolean-value": true`
 - `"jsx-curly-spacing": [true, "never"]`
 - `"jsx-equals-spacing": [true, "never"]`
-- `"jsx-no-lambda": false`
 - `"jsx-self-close": true`
 - `"jsx-space-before-trailing-slash": true`
+- `"jsx-wrap-multiline": true`
 
 ### tslint-jasmine-rules
 
@@ -54,10 +56,11 @@ These rules are only warnings:
 Enforce which character separates interface members.
 
 **Usage:**
-```js
-[true, ";"] // semicolons only
-[true, ","] // commas only
-[true, ""]  // none
+
+```sh
+[true, ";"] # semicolon
+[true, ","] # comma
+[true, ""]  # none
 ```
 
-**Has fixer?** `true`
+**Has fixer?** Yes
