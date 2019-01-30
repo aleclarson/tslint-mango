@@ -45,6 +45,7 @@
         ]
       }
     },
+    "no-angle-bracket-type-assertion": false,
     "no-commented-out-code": true,
     "no-conditional-assignment": false,
     "no-default-export": true,
