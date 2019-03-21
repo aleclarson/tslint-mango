@@ -69,6 +69,7 @@
     "semicolon": false,
     "trailing-comma": {
       "options": {
+        "esSpecCompliant": true,
         "singleline": "never",
         "multiline": {
           "arrays": "always",
