@@ -1,7 +1,6 @@
 /node_modules/
 /lib/
 
-shrinkwrap.yaml
-
 /.yalc/
 /yalc.lock
+/yarn.lock
