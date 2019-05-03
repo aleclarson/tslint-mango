@@ -3,7 +3,8 @@
     "tslint:recommended",
     "tslint-config-prettier",
     "tslint-clean-code",
-    "tslint-jasmine-rules"
+    "tslint-jasmine-rules",
+    "tslint-etc"
   ],
   "rulesDirectory": ["tslint-react/rules", "tslint-misc-rules", "./lib"],
   "rules": {
@@ -59,6 +60,7 @@
     "no-namespace": false,
     "no-shadowed-variable": false,
     "no-string-literal": false,
+    "no-unused-declaration": true,
     "object-literal-sort-keys": false,
     "one-line": [true, "check-open-brace"],
     "prefer-conditional-expression": true,

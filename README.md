@@ -11,6 +11,7 @@ This preset extends the following presets (in order):
 - [`Glavin001/tslint-clean-code`](https://github.com/Glavin001/tslint-clean-code)
 - [`palantir/tslint-react`](https://github.com/palantir/tslint-react)
 - [`kaiza/tslint-jasmine-rules`](https://github.com/kaiza/tslint-jasmine-rules)
+- [`cartant/tslint-etc`](https://github.com/cartant/tslint-etc)
 - [`jwbay/tslint-misc-rules`](https://github.com/jwbay/tslint-misc-rules)
 - custom rules / tweaks
 
@@ -41,6 +42,10 @@ These rules are only warnings:
 
 - `"no-focused-tests": true`
 - `"no-disabled-tests": true`
+
+### tslint-etc
+
+- `"no-unused-declaration": true`
 
 ### tslint-misc-rules
 
