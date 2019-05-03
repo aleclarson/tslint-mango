@@ -7,7 +7,8 @@ The recommended `.prettierrc` is included, but must be installed manually.
 This preset extends the following presets (in order):
 
 - [tslint:recommended](https://github.com/palantir/tslint/blob/master/src/configs/recommended.ts)
-- [`alexjoverm/tslint-config-prettier`](https://github.com/alexjoverm/tslint-config-prettier)
+- [`prettier/tslint-config-prettier`](https://github.com/prettier/tslint-config-prettier)
+- [`prettier/tslint-plugin-prettier`](https://github.com/prettier/tslint-plugin-prettier)
 - [`Glavin001/tslint-clean-code`](https://github.com/Glavin001/tslint-clean-code)
 - [`palantir/tslint-react`](https://github.com/palantir/tslint-react)
 - [`kaiza/tslint-jasmine-rules`](https://github.com/kaiza/tslint-jasmine-rules)

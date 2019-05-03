@@ -2,6 +2,7 @@
   "extends": [
     "tslint:recommended",
     "tslint-config-prettier",
+    "tslint-plugin-prettier",
     "tslint-clean-code",
     "tslint-jasmine-rules",
     "tslint-etc"
