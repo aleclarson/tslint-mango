@@ -19,7 +19,7 @@
     "tslint-clean-code": "^0.2.7",
     "tslint-config-prettier": "^1.15.0",
     "tslint-etc": "^1.5.2",
-    "tslint-jasmine-rules": "^1.5.1",
+    "tslint-jasmine-rules": "link:.yalc/tslint-jasmine-rules",
     "tslint-misc-rules": "^3.5.0",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^3.6.0",
